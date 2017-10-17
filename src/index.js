@@ -8,8 +8,11 @@ const API_KEY = 'AIzaSyA_kxxNpnW_FWTVp-L99yMrg9qdAh2IRn0';
 // Create a new component. This component should produce some HTML
 const App = () => {
 	// same way of writing a function (ES6), except term 'this' is a little different
-	return <div>Hi!</div>;
-}
+	return (
+		<div>
+			<SearchBar />
+		</div>);
+};
 
 
 
