@@ -18,13 +18,10 @@ class SearchBar extends Component {
 		// setting state of term.
 		return (
 			<div>
-				<input onChange={event => this.setState({term:event.target.value})}/>
-			{/*
-				displaying what the term is
-				referencing the term in the state.
-				<p>Value Of The Input: {this.state.term}</p>
-			*/}
-				
+				<input 
+					value={this.state.term}
+					onChange={event => this.setState({term: event.target.value})}
+				/>			
 			</div>	
 		);
 		
@@ -45,3 +42,9 @@ export default SearchBar;
 		// console.log(event);
 		console.log(event.target.value);
 	}*/
+/*
+				displaying what the term is
+				referencing the term in the state.
+				<p>Value Of The Input: {this.state.term}</p>
+			*/
+
