@@ -22,8 +22,9 @@ class SearchBar extends Component {
 			{/*
 				displaying what the term is
 				referencing the term in the state.
-			*/}
 				<p>Value Of The Input: {this.state.term}</p>
+			*/}
+				
 			</div>	
 		);
 		
