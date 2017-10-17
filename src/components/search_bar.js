@@ -15,7 +15,18 @@ class SearchBar extends Component {
 		// onNameOfEvent = {this.eventHandler}
 		// onChange is predefined, passed into event property in onInputChange;
 		// single argument don't need paretheses around event
-		return <input onChange={event => console.log(event.target.value)}/>;
+		// setting state of term.
+		return (
+			<div>
+				<input onChange={event => this.setState({term:event.target.value})}/>
+			{/*
+				displaying what the term is
+				referencing the term in the state.
+			*/}
+				<p>Value Of The Input: {this.state.term}</p>
+			</div>	
+		);
+		
 	}
 
 	// event handler...how you want to name your event handler.
